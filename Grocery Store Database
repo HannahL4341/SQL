@@ -1,0 +1,20 @@
+CREATE table STORE(id INTEGER Primary Key, name TEXT, aisle INTEGER, price INTEGER, stock INTEGER, material TEXT, expiration TEXT);
+
+INSERT INTO STORE VALUES(1, "Green Beans", 2, 3, 100, "metal", "2025");
+INSERT INTO STORE VALUES(2, "Ranch", 3, 4, 50, "plastic", "2024");
+INSERT INTO STORE VALUES(3, "Pizza Rolls", 10, 6, 42, "plastic", "2025");
+INSERT INTO STORE VALUES(4, "American Cheese", 1, 4, 15, "plastic", "2023");
+INSERT INTO STORE VALUES(5, "Captain Crunch", 4, 5, 150, "cardboard", "2023");
+INSERT INTO STORE VALUES(6, "Lay's Chips", 5, 5, 120, "plastic", "2023");
+INSERT INTO STORE VALUES(7, "Hershey's Chocolate", 6, 4, 47, "plastic", "2023");
+INSERT INTO STORE VALUES(8, "Potato Skins", 10, 7, 36, "cardboard", "2024");
+INSERT INTO STORE VALUES(9, "Chimichangas", 10, 6, 23, "cardboard", "2024");
+INSERT INTO STORE VALUES(10, "Pringles", 5, 4, 87, "cardboard", "2023");
+INSERT INTO STORE VALUES(11, "Ketchup", 3, 4, 44, "plastic", "2023");
+INSERT INTO STORE VALUES(12, "Mustard", 3, 4, 32, "plastic", "2023");
+INSERT INTO STORE VALUES(13, "Gouda", 1, 6, 20, "plastic", "2023");
+INSERT INTO STORE VALUES(14, "Water Bottles", 15, 6, 110, "plastic", "2026");
+INSERT INTO STORE VALUES(15, "Propel", 14, 5, 135, "plastic", "2025");
+SELECT * FROM STORE ORDER BY price;
+SELECT * FROM STORE WHERE stock < 50 ORDER BY stock;
+SELECT SUM(STOCK) from STORE
